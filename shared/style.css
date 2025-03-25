@@ -1,0 +1,282 @@
+/* AI Lifestyle - Main Stylesheet */
+
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #6c757d;
+  --success-color: #1cc88a;
+  --info-color: #36b9cc;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --light-color: #f8f9fc;
+  --dark-color: #5a5c69;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fc;
+}
+
+main {
+  flex: 1;
+}
+
+/* Widget Styles */
+.widget {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+}
+
+.widget-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e3e6f0;
+  display: flex;
+  align-items: center;
+}
+
+.widget-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.widget-username {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.widget-time {
+  color: #858796;
+  font-size: 0.8rem;
+}
+
+.widget-content {
+  padding: 1rem;
+}
+
+.widget-text {
+  margin-bottom: 1rem;
+}
+
+.widget-media {
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.widget-media img {
+  max-width: 100%;
+  height: auto;
+}
+
+.widget-media iframe {
+  width: 100%;
+  border: none;
+}
+
+.widget-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.widget-tag {
+  background-color: #e3e6f0;
+  color: #5a5c69;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.widget-tag:hover {
+  background-color: #d1d3e2;
+  color: #2e59d9;
+}
+
+.widget-actions {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e3e6f0;
+  padding: 0.75rem 1rem;
+}
+
+.widget-action-btn {
+  display: flex;
+  align-items: center;
+  color: #858796;
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.widget-action-btn:hover {
+  color: #2e59d9;
+}
+
+.widget-action-btn i {
+  margin-right: 0.25rem;
+}
+
+.widget-action-btn.liked {
+  color: #e74a3b;
+}
+
+/* Comments */
+.comments-section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e3e6f0;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.comment-content {
+  flex: 1;
+  background-color: #f8f9fc;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.comment-username {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.comment-time {
+  color: #858796;
+  font-size: 0.75rem;
+}
+
+.comment-text {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Profile */
+.profile-header {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.profile-username {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.profile-summary {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile-stat {
+  text-align: center;
+}
+
+.profile-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.profile-stat-label {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Forms */
+.auth-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.auth-form-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.form-floating {
+  margin-bottom: 1rem;
+}
+
+/* Load More Button */
+.load-more-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .profile-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .widget-actions {
+    flex-wrap: wrap;
+  }
+  
+  .widget-action-btn {
+    margin-bottom: 0.5rem;
+  }
+}

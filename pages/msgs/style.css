@@ -1,0 +1,102 @@
+/* Msgs Page Styles */
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.msg-item {
+  padding: 1rem;
+  border-left: none;
+  border-right: none;
+  transition: background-color 0.2s;
+}
+
+.msg-item:hover {
+  background-color: #f8f9fa;
+}
+
+.msg-item.unread {
+  background-color: #f0f7ff;
+}
+
+.msg-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.msg-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.msg-link {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.msg-link:hover {
+  color: #007bff;
+}
+
+.msg-time {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.msg-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination .page-link {
+  color: #007bff;
+  border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+}
+
+/* Empty state styling */
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .msg-avatar,
+  .msg-icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .msg-icon-wrapper {
+    font-size: 1.25rem;
+  }
+  
+  .msg-actions {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .msg-actions .btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
