@@ -54,8 +54,8 @@ INSERT IGNORE INTO tags (name) VALUES
 -- Demo user for development
 -- Password is 'demo123' (hashed with password_hash using PASSWORD_DEFAULT)
 INSERT IGNORE INTO users (username, email, password, summary) VALUES
-  ('demo', 'demo@example.com', '$2y$10$zF9/D8LUKuIQYLQwjUVVYeYTqGfzH6JKbSPQrVw.DlMYIxSLs2oCe', 'This is a demo account for development and testing purposes.');
-
+  ('demo', 'demo@example.com', '$2y$10$a6bRPclBSvu4HRobfhKDCeRg.58G6BnhWCi6Kky5DvLJ6V3y7AC9.', 'This is a demo account for development and testing purposes.');
+                                
 -- Widget tags relation
 CREATE TABLE IF NOT EXISTS widget_tags (
   widget_id INT NOT NULL,
