@@ -33,7 +33,7 @@
       </div>
     </div>
     
-    <?php if( $isLoggedIn && !$isOwnProfile ): ?>
+    <?php if( $isLoggedIn && ! $isOwnProfile ): ?>
       <div class="mt-3">
         <form action="<?= $baseUrl ?>/ajax.php?action=profile&handler=follow" method="post" id="follow-form">
           <input type="hidden" name="user_id" value="<?= $profileUser['id'] ?>">

@@ -86,6 +86,7 @@ The database includes the following tables:
 
 ```
 /
+├── assets/              # Assets (images)
 ├── classes/             # PHP classes (models, utilities)
 │   ├── Config/          # Configuration classes
 │   └── Utils/           # Utility classes
@@ -101,8 +102,11 @@ The database includes the following tables:
 ├── ajax.php             # AJAX request handler
 ├── composer.json        # Composer configuration
 ├── config.yml           # Application configuration
-├── index.php            # Main entry point
-└── setup.sql            # Database setup script
+├── controller.js        # Main js controller
+├── error-handler.js     # Error handler
+└── index.php            # Main entry point
+
+    setup.sql            # Database setup script
 ```
 
 ## License
