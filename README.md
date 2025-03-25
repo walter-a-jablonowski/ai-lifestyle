@@ -80,7 +80,6 @@ The database includes the following tables:
 - **likes**: Records which users have liked which widgets
 - **comments**: Stores user comments on widgets
 - **follows**: Tracks user follow relationships
-- **noifications**: Stores user msgs for various activities
 
 ## Directory Structure
 
