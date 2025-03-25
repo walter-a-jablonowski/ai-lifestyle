@@ -1,0 +1,87 @@
+/**
+ * Login page styles
+ */
+
+/* Auth form container */
+.auth-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+/* Form header */
+.auth-form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-form-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Form elements */
+.form-floating {
+  margin-bottom: 1.5rem;
+}
+
+.form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #5a52d5;
+  border-color: #5a52d5;
+}
+
+.btn-outline-danger {
+  color: #ea4335;
+  border-color: #ea4335;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ea4335;
+  color: #fff;
+}
+
+/* Google button */
+.btn-outline-danger .bi-google {
+  margin-right: 0.5rem;
+}
+
+/* Invalid form feedback */
+.form-control.is-invalid {
+  border-color: #dc3545;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-form {
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+}
+
+/* Animation for alerts */
+.alert {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
