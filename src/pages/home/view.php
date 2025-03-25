@@ -2,7 +2,7 @@
   <!-- Main Content -->
   <div class="col-lg-8">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h1 class="h3"><?= $isLoggedIn ? "Your Feed" : "Trending Content" ?></h1>
+      <h1 class="h3"><?= $isLoggedIn ? "Trending content" : "Share your AI-age lifestyle - get inspired" ?></h1>
       <?php if( $isLoggedIn ): ?>
         <a href="<?= $baseUrl ?>/?page=profile" class="btn btn-primary">
           <i class="bi bi-plus-lg"></i> Create Widget
