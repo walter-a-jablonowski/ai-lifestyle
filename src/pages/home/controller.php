@@ -2,7 +2,7 @@
 use AILifestyle\Config\Database;
 
 // Set page title
-$pageTitle = "AI Lifestyle - Share Your Meaningful Life";
+$pageTitle = "AI Lifestyle - Share your AI-age lifestyle";
 $pageStyles = true;
 $pageScripts = true;
 

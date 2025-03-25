@@ -235,7 +235,7 @@
       <div class="card">
         <div class="card-body text-center">
           <h5 class="card-title">Join AI Lifestyle</h5>
-          <p class="card-text">Share your meaningful life and connect with people in the age of AI.</p>
+          <p class="card-text">Share your AI-age lifestyle and connect with people in the age of AI.</p>
           <a href="<?= $baseUrl ?>/?page=register" class="btn btn-primary">Register Now</a>
         </div>
       </div>

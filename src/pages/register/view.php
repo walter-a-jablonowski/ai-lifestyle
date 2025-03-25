@@ -3,7 +3,7 @@
     <div class="auth-form">
       <div class="auth-form-header">
         <h2 class="auth-form-title">Create an Account</h2>
-        <p class="text-muted">Join AI Lifestyle and share your meaningful life</p>
+        <p class="text-muted">Join AI Lifestyle and share your AI-age lifestyle</p>
       </div>
       
       <?php if( !empty( $error ) ): ?>

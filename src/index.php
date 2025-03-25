@@ -15,9 +15,7 @@ $page = $_GET['page'] ?? 'home';
 
 // Validate page name to prevent directory traversal
 if( ! preg_match( '/^[a-zA-Z0-9_-]+$/', $page ) )
-{
   $page = 'home';
-}
 
 // Check if page exists
 $pagePath = __DIR__ . "/pages/$page";
@@ -45,6 +43,7 @@ require_once $controllerFile;
 
 // Start output buffering
 ob_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,23 +116,17 @@ ob_start();
   <!-- Main Content -->
   <main class="container py-4">
     <?php 
-      // Include the view
-      $viewFile = "$pagePath/view.php";
-      if( file_exists( $viewFile ) )
-      {
-        include $viewFile;
-      }
+      if( file_exists("$pagePath/view.php"))
+        include "$pagePath/view.php";
       else
-      {
         echo "<div class='alert alert-danger'>View file missing for page: $page</div>";
-      }
     ?>
   </main>
 
   <!-- Footer -->
   <footer class="bg-light py-4 mt-auto">
     <div class="container text-center">
-      <p class="mb-0">&copy; <?= date('Y') ?> AI Lifestyle - Share your meaningful life</p>
+      <p class="mb-0">&copy; <?= date('Y') ?> AI Lifestyle</p>
     </div>
   </footer>
 
@@ -147,6 +140,8 @@ ob_start();
 </body>
 </html>
 <?php
+
 // Flush the output buffer
 ob_end_flush();
+
 ?>
