@@ -1,4 +1,4 @@
-# AI Lifestyle Web App
+# AI Lifestyle
 
 Share your AI-age lifestyle, connecting with people, find meaning and get inspired.
 
